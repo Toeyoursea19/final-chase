@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="icon" href="assets/favicon.ico">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-left">
+            <img src="assets/logo.png" alt="Logo" class="logo">
+            <span class="app-name">Welcome William</span>
+        </div>
+        <div class="nav-right">
+            <button id="logoutBtn">Logout</button>
+        </div>
+    </nav>
+    
+    <div class="dashboard-container">
+        <div class="account-section">
+            <div class="account-card">
+                <h3>Checking Account</h3>
+                <div class="balance-section">
+                    <h4>Available Balance</h4>
+                    <div class="bank-balance">$3,245.67</div>
+                </div>
+                
+                <div class="spending-summaries">
+                    <div class="this-month">
+                        <h4>Spending</h4>
+                        <p>Total: $737.01</p>
+                        <div class="spending-breakdown">
+                            <div class="category">Groceries: $345.67</div>
+                            <div class="category">Water: $256.78</div>
+                            <div class="category">Waste Disposal: $134.56</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="account-card">
+                <h3>Savings Account</h3>
+                <div class="balance-section">
+                    <h4>Available Balance</h4>
+                    <div class="bank-balance">$6,187.45</div>
+                </div>
+                
+                <div class="spending-summaries">
+                    <div class="this-month">
+                        <h4>Transfers</h4>
+                        <p>Total Transfers: $950.00</p>
+                        <div class="spending-breakdown">
+                            <div class="category">From Chk: $300.00</div>
+                            <div class="category">HOA: $650.00</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

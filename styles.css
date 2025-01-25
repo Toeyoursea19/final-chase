@@ -1,0 +1,181 @@
+:root {
+    --primary-color: #007bff;
+    --background-color: #f4f4f4;
+    --nav-background: #ffffff;
+    --text-color: #333;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: var(--background-color);
+    background-image: url(/assets/Background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.login-container{
+    /* border: 2px solid green; */
+    display: flex;
+    justify-content: center;
+    padding: .4rem 2rem;
+}
+#loginForm{
+    /* border: 2px solid red; */
+    padding: 4rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#loginForm h2{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.2rem;
+    align-self: flex-start;
+    color: #ffffff;
+    padding: 2rem 0rem;
+}
+#loginForm button{
+    font-size: 1rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 1rem 2rem;
+    font-weight: 700;
+    color: #007bff;
+    border: none;
+    border-radius: 10px;
+}
+.input-group{
+    font-size: 1.2rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 900;
+    color:  #007bff;
+    padding: 1rem 0rem;
+}
+.input-group input{
+    border: 1px solid rgba(82, 81, 81, 0.945);
+    font-size: 1.5rem;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    outline: none;
+    background-color: transparent;
+    text-align: center;
+}
+.remember-me{
+    color: #fa0707;
+    padding: 2rem 0rem;
+    font-weight: 700;
+}
+
+/* Navigation Styles */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: var(--primary-color);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    max-height: 40px;
+    margin-right: 1rem;
+}
+
+.app-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--nav-background);
+}
+
+#logoutBtn {
+    background-color: var(--nav-background);
+    color: --primary-color;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#logoutBtn:hover {
+    background-color: darken(var(--primary-color), 10%);
+}
+
+/* Dashboard Container */
+.dashboard-container {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Account Section */
+.account-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.account-card {
+    flex: 1;
+    background-color: white;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.balance-section {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.bank-balance {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.spending-summaries {
+    background-color: var(--background-color);
+    border-radius: 6px;
+    padding: 1rem;
+}
+
+.spending-breakdown .category {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+    padding: 0.3rem 0;
+    border-bottom: 1px solid #eee;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .account-section {
+        flex-direction: column;
+    }
+
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-left {
+        flex-direction: column;
+        margin-bottom: 1rem;
+    }
+
+    .app-name {
+        margin-top: 0.5rem;
+    }
+}
